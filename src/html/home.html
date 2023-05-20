@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/css/styleHOME.css">
+  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="/imagens/logo2.ico" type="image">
+  <title>Pagina Principal</title>
+</head>
+<body>
+  <header class="header">
+    <a href="/src/html/home.html">
+    <img src="/imagens/DoorWay.png" alt="Logo-Projeto        " class="logo">
+  </a>
+    <nav class="navbar">
+      <a href="/site.html">Inicio</a>
+      <a href="/src/html/projeto.html">Projeto</a>
+      <a href="/src/html/Contatos.html">Contatos</a>
+    </nav>
+  </header>
+
+  <h1>BEM VINDO AO NOSSO MAPA INTERATIVO!</h1>
+  <h3>Basta clicar no local desejado para obeter mais informações:</h3>
+  <img id="imagem" src="/imagens/mapa.png" alt="imagem da planta" usemap="#planta">
+    <map name="planta">
+      <area shape="rect" coords="229,184,274,271" onclick="abrirModal()" class="botao" alt="Secretaria/Cejur" title="Secretaria/Cejur" target="alvo">
+      <area shape="rect" coords="276,183,320,273" onclick="abrirModal2()" class="botao" alt="Reitoria" title="Reitoria" target="alvo">
+      <area shape="rect" coords="574,362,662,421" onclick="abrirModal3()" class="botao" alt="Ambulatorio" title="Ambulatorio" target="alvo">
+      <area shape="poly" coords="1008,343,1007,185,1403,187,1405,449,1251,446,1248,293,1163,293,1162,340" onclick="abrirModal4()" class="botao" alt="Refeitorio" title="Refeitorio" target="alvo">
+      <area shape="rect" coords="1034,348,1123,420" onclick="abrirModal5()" class="botao" alt="Graficas" title="Graficas" target="alvo">
+      <area shape="rect" coords="888,13,1099,181" onclick="abrirModal6()" class="botao" alt="Ginásio" title="Ginásio" target="alvo">
+      <area shape="rect" coords="1183,578,1436,677" onclick="abrirModal7()" class="botao" alt="Mini-Auditorio" title="Mini-Auditorio" target="alvo">
+      <area shape="rect" coords="473,806,552,881" onclick="abrirModal8()" class="botao" alt="Escadas P/ 2 Andar" title="Escadas P/ 2 Andar" target="alvo">
+      <area shape="rect" coords="1185,424,1231,457" onclick="abrirModal9()" class="botao" alt="Escada P/ 2 Andar" title="Escada P/ 2 Andar gourmert" target="alvo">
+      <area shape="rect" coords="951,184,991,214" onclick="abrirModal10()" class="botao" alt="Escada P/ 2 Andar" title="Escada P/ 2 Andar refeitorio" target="alvo">
+    </map>
+
+    <div class="janela-modal" id="janela-modal">
+      <div class="modal">
+        <button class="fechar" id="fechar">X</button>
+        <img src="/imagens/zeze.png" alt="Cejur/Secretaria" class="imagens">
+        <h1 class="nome-local">Cejur/Secretaria</h1>
+        <p id="mensagem"> </p>
+      </div>
+    </div>
+
+    <div class="janela-modal2" id="janela-modal2">
+      <div class="modal2">
+        <button class="fechar" id="fechar">X</button>
+        <img src="/imagens/zeze.png" alt="Reitoria" class="imagens">
+        <h1 class="nome-local">Reitoria</h1>
+        <p id="mensagem2"> </p>
+      </div>
+    </div>
+
+    <div class="janela-modal3" id="janela-modal3">
+      <div class="modal3">
+        <button class="fechar" id="fechar">X</button>
+        <img src="/imagens/zeze.png" alt="Ambulatório" class="imagens">
+        <h1 class="nome-local">Ambulatório</h1>
+        <p id="mensagem3"> </p>
+      </div>
+    </div>
+
+    <div class="janela-modal4" id="janela-modal4">
+      <div class="modal4">
+        <button class="fechar" id="fechar">X</button>
+        <img src="/imagens/zeze.png" alt="Refeitório" class="imagens">
+        <h1 class="nome-local">Refeitório</h1>
+        <p id="mensagem4"> </p>
+      </div>
+    </div>
+
+    <div class="janela-modal5" id="janela-modal5">
+      <div class="modal5">
+        <button class="fechar" id="fechar">X</button>
+        <img src="/imagens/zeze.png" alt="Graficas" class="imagens">
+        <h1 class="nome-local">Gráficas</h1>
+        <p id="mensagem5"> </p>
+      </div>
+    </div>
+
+    <div class="janela-modal6" id="janela-modal6">
+      <div class="modal6">
+        <button class="fechar" id="fechar">X</button>
+        <img src="/imagens/zeze.png" alt="Ginásio" class="imagens">
+        <h1 class="nome-local">Ginásio</h1>
+        <p id="mensagem6"> </p>
+      </div>
+    </div>
+
+    <div class="janela-modal7" id="janela-modal7">
+      <div class="modal7">
+        <button class="fechar" id="fechar">X</button>
+        <img src="/imagens/zeze.png" alt="Auditório" class="imagens">
+        <h1 class="nome-local">Auditório</h1>
+        <p id="mensagem7"> </p>
+      </div>
+    </div>
+
+    <div class="janela-modal8" id="janela-modal8">
+      <div class="modal8">
+        <button class="fechar" id="fechar">X</button>
+        <img src="/imagens/zeze.png" alt="Escadas P/ 2 andar" class="imagens">
+        <h1 class="nome-local">Escadas P/ 2 andar</h1>
+        <p id="mensagem8"> </p>
+      </div>
+    </div>
+
+    <div class="janela-modal9" id="janela-modal9">
+      <div class="modal9">
+        <button class="fechar" id="fechar">X</button>
+        <img src="/imagens/zeze.png" alt="ImagemDoZezinho" class="imagens">
+        <h1 class="nome-local">NOME DO LOCAL</h1>
+        <p id="mensagem9"> </p>
+      </div>
+    </div>
+
+    <div class="janela-modal10" id="janela-modal10">
+      <div class="modal10">
+        <button class="fechar" id="fechar">X</button>
+        <img src="/imagens/zeze.png" alt="ImagemDoZezinho" class="imagens">
+        <h1 class="nome-local">NOME DO LOCAL</h1>
+        <p id="mensagem10"> </p>
+      </div>
+    </div>
+
+
+
+  <footer>
+    <div class="container">
+        <p class="reserved">
+            &copy DoorWay - Todos os  seus direitos reservados - 2023
+        </p>
+      </div>
+  </footer>
+  <script src="/src/JS/script.js"></script>
+</body>
+</html>

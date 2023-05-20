@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins, sans-serif';
+  }
+  
+  body {
+    min-height: 100vh;
+    background-color: #0e1035;
+  }
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    padding: 15px 100px;
+    background: linear-gradient(60deg, rgb(8, 9, 38, 1), rgb(8, 9, 38, 1));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: 35px;
+    transition: .3s;
+    font-family: Arial, Helvetica, sans-serif
+}  
+
+.navbar a:hover {
+    color: rgb(255, 255, 0)
+}
+
+.logo {
+    width: 300px;
+    cursor: pointer;
+}
+
+.equipe-front {
+    width: 1080px;
+    height: 620px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    border-style: solid;
+    border-color: white;
+    
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.brands-list img {
+    height: 50px;
+}
+
+.brands-list li {
+    display: inline;
+    margin-right: 8px;
+}
+
+
+section {
+    padding: 24px 0;
+}
+
+section h2 {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    color: rgb(255, 255, 255);
+}
+
+section {
+    color: rgb(255, 255, 255);
+}
+
+section p {
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: rgb(76, 11, 136);
+    color: white;
+    margin-top: auto;
+    padding: 16px;
+}
+

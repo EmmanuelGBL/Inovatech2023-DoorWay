@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins, sans-serif';
+}
+
+body {
+  min-height: 100vh;
+  background-color: #0e1035;
+}
+.logo {
+  width: 300px;
+  cursor: pointer;
+}
+
+#card {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 450px;
+  height: 500px;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(135deg, rgba(0, 81, 255, 0.527), rgba(58, 183, 255, 0.445));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(226, 226, 226, 0.705);
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  border-radius: 15px;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.219);
+  z-index: 0;
+}
+
+#imagem {
+  width: 90rem;
+  height: 60rem;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+
+h1 {
+  color: rgb(246, 247, 249);
+  justify-content: center;
+  display: flex;
+  padding-top: 110px;
+  align-items: center;
+  font-size: 40px;
+  font-family: Constantia ;
+}
+
+h3 {
+  color: rgb(80, 162, 255);
+  justify-content: center;
+  display: flex;
+  padding-top: 10px;
+  align-items: center;
+  font-size: 24px;
+  font-family: Poppins;
+}
+
+h2 {
+  color: #fff;
+  justify-content: center;
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  font-size: 21px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  color: #fff;
+  justify-content: center;
+  padding: 20px;
+  display: flex;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  padding: 15px 100px;
+  background: linear-gradient(60deg, rgb(8, 9, 38, 1), rgb(8, 9, 38, 1));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+.logo:hover {
+  color: rgb(255, 255, 0)
+}
+
+.navbar a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  margin-left: 35px;
+  transition: .3s;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+.navbar a:hover {
+  color: rgb(255, 68, 44);
+}
+
+
+footer {
+  background-color: rgb(76, 11, 136);
+  color: white;
+  margin-top: auto;
+  height: 50px;
+}
+
+.reserved {
+  max-width: 1280px;
+  margin: 0 auto;
+  font-size: 15px;
+  justify-content: flex-start;
+  margin-left: 300px;
+}
+
+.botao{
+  cursor: pointer;
+}
+
+.botao:hover{
+  background-color: lightgray;
+  opacity: 0.5;
+}
+
+
+.janela-modal, .janela-modal2, .janela-modal3, .janela-modal4, .janela-modal5,
+.janela-modal6, .janela-modal7, .janela-modal8, .janela-modal9, .janela-modal10{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #0000004b;
+  z-index: 999;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.modal, .modal2, .modal3, .modal4, .modal5, 
+.modal6, .modal7, .modal8, .modal9, .modal10 {
+  width: 20%;
+  min-width: 450px;
+  min-height: 200px;
+  background-color: rgba(255, 255, 255, 0.548);
+  backdrop-filter: blur(10px);
+  padding: 50px;
+  border-radius: 20px;   
+}
+
+.fechar{
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 0;
+  background-color: red;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.janela-modal.abrir, .janela-modal2.abrir, .janela-modal3.abrir, .janela-modal4.abrir, .janela-modal5.abrir,
+.janela-modal6.abrir, .janela-modal7.abrir, .janela-modal8.abrir, .janela-modal9.abrir, .janela-modal10.abrir {
+  display: flex;
+}
+
+.imagens {
+  width: 60%;
+  min-width: 350px;
+  min-height: 100px;
+}
+
+.nome-local{
+  color: rgb(12, 4, 83);
+  margin-top: -100px;
+  align-items:start;
+  justify-content: flex-start;
+  font-size: 30px;
+}
+
+#mensagem, #mensagem2, #mensagem3, #mensagem4, #mensagem5, 
+#mensagem6, #mensagem7, #mensagem8, #mensagem9, #mensagem10 {
+  color: black;
+  font-size: 20px;
+  margin-left: -10px;
+  height: auto;
+  width: 380px;
+}
