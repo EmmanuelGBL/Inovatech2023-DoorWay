@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins, sans-serif';
+    font-family: 'Poppins', sans-serif;
   }
   
   body {
@@ -11,7 +11,7 @@
   }
 
 .header {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 100px;
     padding: 15px 100px;
@@ -19,6 +19,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .navbar a {
@@ -27,25 +28,34 @@
     text-decoration: none;
     margin-left: 35px;
     transition: .3s;
-    font-family: Arial, Helvetica, sans-serif
-}  
+    font-weight: lighter;
+    font-size: 20px;
+  }  
+
 
 .navbar a:hover {
-    color: rgb(255, 255, 0)
-}
+    color: rgb(117, 135, 240);
+  }
 
 
-header h1,
-section h2,
-header li,
-section h3,
-form button {
-    font-family: 'bungee', cursive;
-    font-weight: normal;
+
+
+.h3, .h2 {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
 }
+
+.enviar-btn{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 
 body, input, textarea {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
 }
 
 
@@ -53,20 +63,9 @@ body, input, textarea {
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
-}
-
-.equipe-front {
-    width: 1080px;
-    height: 620px;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 100px;
-    border-style: solid;
-    border-color: white;
     
 }
-
 
 
 section .container {
@@ -148,10 +147,13 @@ input:focus, textarea:focus {
 }
 
 footer {
-    background-color: rgb(76, 11, 136);
+    background-color: rgb(37, 6, 95);
     color: white;
     margin-top: auto;
     padding: 16px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
 }
 
 .logo {
@@ -162,4 +164,11 @@ footer {
 .nome-insta {
     margin-left: 10px;
     margin-top: 2px;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+}
+
+.informacao {
+    font-size: 15px;
 }
