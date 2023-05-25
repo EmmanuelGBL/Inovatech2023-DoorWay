@@ -1,7 +1,7 @@
-let texto = "O CEJUR é o Centro de Estudos Jurídicos localizado no campus universitário. É um espaço dedicado ao aprimoramento acadêmico e profissional no campo do Direito. Oferece cursos, workshops e palestras ministradas por renomados professores e especialistas. O CEJUR também promove a pesquisa jurídica, disponibilizando recursos como biblioteca especializada e laboratórios equipados.";
+let texto = "A Recepção é o centro administrativo da Universidade, oferecendo uma variedade de serviços e informações essenciais para estudantes, professores e funcionários.";
 document.getElementById("mensagem").innerHTML = `<i> ${texto}`;
 
-let texto2 = " A Reitoria/Secretaria é o centro administrativo da Universidade, oferecendo uma variedade de serviços e informações essenciais para estudantes, professores e funcionários.";
+let texto2 = "A Reitoria é um órgão executivo máximo da Universidade e é responsável por planejar, administrar, coordenar e fiscalizar todas as atividades da instituição, além de firmar convênios e parcerias para viabilizar projetos relacionados à política universitária, de modo que possam garantir o desenvolvimento e a visibilidade das atividades acadêmicas.";
 document.getElementById("mensagem2").innerHTML = `<i> ${texto2}`;
 
 let texto3 = " Localizado dentro da faculdade, o ambulatório é um espaço dedicado a fornecer cuidados médicos de qualidade aos estudantes, professores e funcionários da instituição.";
@@ -19,16 +19,13 @@ document.getElementById("mensagem6").innerHTML = `<i> ${texto6}`;
 let texto7 = "Bem-vindo(a) ao Miniauditório da Faculdade! O espaço foi projetado para proporcionar um ambiente adequado para palestras, apresentações, seminários e eventos acadêmicos. Com capacidade para acomodar um número menor de pessoas, oferecemos um local intimista e acolhedor para suas atividades acadêmicas.";
 document.getElementById("mensagem7").innerHTML = `<i> ${texto7}`;
 
-let texto8 = " ndo penetrar sem consentimento do morador, salvo em c ";
+let texto8 = " A escada dá acesso ao 2º andar, onde fica localizados as turmas iniciantes dos cursos de Exatas (1º e 2º período)";
 document.getElementById("mensagem8").innerHTML = `<i> ${texto8}`;
 
-let texto9 = " ée das comunicações telegráficas, de dados e das comunicações telefônicas ";
+let texto9 = "Essas escadas dao acesso à 8 andares, sendo o 6º e 7º andar, destinados para pessoas do EaD e no último andar, encontra-se o auditório da fametro, e os demais andares são compostos por salas e uma biblioteca.";
 document.getElementById("mensagem9").innerHTML = `<i> ${texto9}`;
 
-let texto10 = "  profissionais que a lei estabelecer";
-document.getElementById("mensagem10").innerHTML = `<i> ${texto10}`;
-
-let textoInstrucao = "Lorem ipsum, dolor sit amet Lorem ipsum, dolor sit ametLorem ipsum, dolor sit ametLorem ipsum, dolor sit ametLorem ipsum, dolor sit ametLorem ipsum, dolor sit ametLorem ipsum, dolor sit amet consectetur adipisicing elit. Autem quos eius excepturi repellendus fuga, aut maxime repellat, at aliquid nostrum culpa! Dolore iste dolores officia doloremque fugiat nemo provident sed."
+let textoInstrucao = "Para interagir com o mapa basta passar o ponteiro do mouse por cima da area, se ela for selecionada, clique com o botão esquerdo do mouse. <br> Para sair do Card informativo aperte o “X” ou clique em qualquer lugar fora do Card."
 document.getElementById("mensagem-Instrucao").innerHTML = `<i> ${textoInstrucao}`
 
 
@@ -140,18 +137,6 @@ function abrirModal9() {
     )
 }
 
-function abrirModal10() {
-    const modal10 = document.getElementById('janela-modal10')
-    modal10.classList.add('abrir')
-
-    modal10.addEventListener('click', (e) => {
-        if (e.target.id == 'fechar' || e.target.id == 'janela-modal10') {
-            modal10.classList.remove('abrir')
-        }
-    }
-    )
-}
-
 $('#image-map area').hover(
 	function () { 
 		var coords = $(this).attr('coords').split(',');
@@ -185,7 +170,7 @@ function abrirInstrucao() {
 document.addEventListener("DOMContentLoaded", function(event) {
     let slide = document.querySelectorAll(".slide");
     let currentSlide = 0;
-    const slideInterval = setInterval(nextSlide, 5000);
+    const slideInterval = setInterval(nextSlide, 3500);
   
     function nextSlide() {
       slide[currentSlide].style.display = "none";

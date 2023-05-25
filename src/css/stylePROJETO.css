@@ -3,12 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-  }
-  
-  body {
+}
+
+body {
     min-height: 100vh;
     background-color: #0e1035;
-  }
+}
 
 .header {
     position: absolute;
@@ -29,11 +29,11 @@
     transition: .3s;
     font-weight: lighter;
     font-size: 20px;
-  }  
+}
 
 .navbar a:hover {
     color: rgb(117, 135, 240);
-  }
+}
 
 .logo {
     width: 300px;
@@ -49,14 +49,14 @@
     margin-top: 100px;
     border-style: solid;
     border-color: white;
-    
+
 }
 
 .container {
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
-    
+
 }
 
 
@@ -94,11 +94,11 @@ footer {
     margin-top: auto;
     padding: 16px;
     bottom: 0;
-    position:relative;
+    position: relative;
     width: 100%;
 }
 
-.mensagem-projeto{
+.mensagem-projeto {
     font-size: 18px;
     text-align: justify;
 }
