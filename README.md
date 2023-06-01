@@ -10,3 +10,10 @@ Nos dias 25 e 26/05, ocorreu o Inovatech - Feira De Inovações Tecnologicas, no
 💻 Tecnologias Utilizadas: O site foi construído utilizando HTML, CSS, JavaScript e Jquery. Utilizamos essa linguagem de programação para poder ter a interação com usuário.
 
 👨‍🏫 Sobre a apresentação no Inovatech: O DoorWay 🚪  nesta ocasião, foi projetado para o térreo da unidade 1 da Fametro, pretendemos facilitar sua locomoção pelo local, com um mapa interativo que lhe permite saber onde está o seu destino. Esperamos que este site possa ser útil para você que deseja conhecer melhor a instituição Fametro!
+
+<img width="800" height="420" src="/imagens/imagem12.png"> 
+
+<img width="800" height="420" src="/imagens/imagem13.gif"> 
+
+<img width="800" height="420" src="/imagens/imagem14.png"> 
+
