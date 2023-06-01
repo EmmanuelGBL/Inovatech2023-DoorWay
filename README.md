@@ -1,4 +1,4 @@
-﻿# Inovatech2023-DoorWay 🚪
+﻿# Inovatech2023 - DoorWay 🚪
  
  
 Nos dias 25 e 26/05, ocorreu o Inovatech - Feira De Inovações Tecnologicas, no Centro Universitário Fametro e o tema deste ano foi Tecnologia para o mercado de trabalho. 📊 
