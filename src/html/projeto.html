@@ -9,25 +9,43 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/css/stylePROJETO.css">
+    <link rel="stylesheet" href="/src/css/responsivo_projeto.css">
     <link rel="shortcut icon" href="/imagens/logo2.ico" type="image">
-    <title>Projetos</title>
+    <title>Nosso Projeto!</title>
 
 <body>
 
-    <header class="header">
-        <a href="/site.html">
-            <img src="/imagens/DoorWay.png" alt="Logo-Projeto" class="logo">
-        </a>
-        <nav class="navbar">
-            <a href="/src/html/home.html">Mapa</a>
-            <a href="/src/html/projeto.html">Nosso Projeto</a>
-            <a href="/src/html/Contatos.html">Contatos</a>
-        </nav>
+    <header>
+        <a href="/site.html" class="logo2"> <img src="/imagens/DoorWay4.png" class="logo"> </a>
+      
+        <div class="menu-section">
+          <div class="menu-toggle">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+          </div>
+        <nav>
+           <ul>
+             <li >
+                <a href="/src/html/home.html" class="espaco">Mapa</a>
+           </li>
+              <li >
+                <a href="/src/html/projeto.html" class="espaco">Nosso projeto</a>
+             </li>
+              <li >
+                <a href="/src/html/Contatos.html" class="espaco">Contatos</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      
     </header>
 
     <section id="about">
         <div class="container">
+            <div class="equipe">
             <img class="equipe-front" src="/imagens/turma.jpeg" alt="Foto Da Equipe" title="Foto da Equipe" />
+        </div>  
             <div>
                 <h1>Sobre o nosso Projeto</h1>
                 <p class="mensagem-projeto">
@@ -62,6 +80,7 @@
             &copy DoorWay - Todos os seus direitos reservados - 2023
         </p>
     </footer>
+    <script src="/src/JS/responsive.js" ></script>
 </body>
 
 </html>

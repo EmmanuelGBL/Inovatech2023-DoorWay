@@ -1,0 +1,164 @@
+@media (max-width: 858px) {
+    h1{
+        font-size: 300%;
+      }
+      h3{
+        font-size: 200%;
+      }
+
+      .instruction-botao {
+        display: flex;
+        justify-content: center;
+        margin-left: 20px;
+        font-size: 100%;
+    }
+        .Instrucoes-botao {
+            font-size: 200%;
+        }
+    #mensagem, #mensagem2, #mensagem3, #mensagem4, #mensagem5, 
+    #mensagem6, #mensagem7, #mensagem8, #mensagem9, #mensagem10, #mensagem-Instrucao{
+     font-size: 200%;   
+    }
+}
+
+@media (max-width: 723px) {
+    /* Max-width = Tela menores que alguma resolução */
+    nav {
+      display: none;
+  }
+  .one,
+  .two,
+  .three {
+      background-color: #fff;
+      height: 5px;
+      width: 100%;
+      margin: 6px auto;
+
+      transition-duration: 0.3s;
+  }
+  .menu-toggle {
+      width: 40px;
+      height: 30px;
+      margin-right: 20px;
+      margin-left: 20px;
+  }
+  /* fullscreen */
+  .menu-section.on {
+      position: absolute;
+        top:0;
+        left:0;
+        
+        width: 100vw;
+        height: 100vh;
+
+        background-color: #282b77;
+        
+        z-index: 10;
+
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;    
+  }
+  .menu-section.on nav {
+      display: block;        
+  }
+  .menu-section.on .menu-toggle {
+      position: absolute;
+      right: 25px;
+      top: 15px;   
+  }
+  .menu-section.on .menu-toggle .one {
+      transform: rotate(45deg) translate(7px, 7px);
+  }
+  .menu-section.on .menu-toggle .two {
+      opacity: 0;
+  }
+  .menu-section.on .menu-toggle .three {
+      transform: rotate(-45deg) translate(8px, -9px);
+  }
+  .menu-section.on nav ul {
+      text-align: center;
+      display: block;
+      margin-top: 10rem; 
+  }
+  .menu-section.on nav ul a{
+      transition-duration: 0.5s;
+      font-size: 3rem;
+      line-height: 4rem;
+      display: block;  
+  }
+  .menu-section.on nav ul :hover{
+    color: rgba(0, 81, 255, 0.733);
+  }
+}
+
+@media (max-width: 663px) {
+    h1, .nome-local {
+        font-size: 200%;
+    }
+    h3{
+        font-size: 150%;
+    }
+    .Instrucoes-botao {
+        font-size: 150%;
+    }
+    #mensagem, #mensagem2, #mensagem3, #mensagem4, #mensagem5, 
+    #mensagem6, #mensagem7, #mensagem8, #mensagem9, #mensagem10, #mensagem-Instrucao{
+     font-size: 150%;   
+    }
+}
+
+@media (max-width: 529px) {
+.instruction-botao {
+    display: flex;
+    justify-content: center;
+    margin-left: -40px;
+    font-size: 100%;
+    width: 120%;
+}
+
+}
+
+@media (max-width: 447px) {
+    .menu-section{
+       margin-right: -15%;
+    }
+   .logo {
+        width: 100%;
+    }
+
+    a.logo2 {
+        width: 161px;
+        height: 48.3px;
+        margin-left: -20px;
+    }
+    .instruction-botao {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 430px) {
+    .instruction-botao {
+        display: flex;
+        justify-content: center;
+        font-size: 80%;
+    }
+  .janela-modal, .janela-modal2, .janela-modal3, .janela-modal4, .janela-modal5,
+  .janela-modal6, .janela-modal7, .janela-modal8, .janela-modal9, .janela-modal10, 
+  .janela-Instrucao {
+    padding: 30px;
+  } 
+
+
+}
+
+/* @media (max-width: 419px) {
+    .instruction-botao {
+        display: flex;
+        justify-content: center;
+        font-size: 80%;
+    }
+
+} */

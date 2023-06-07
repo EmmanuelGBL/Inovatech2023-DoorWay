@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/src/css/styleHOME.css">
+  <link rel="stylesheet" href="/src/css/responsivo_mapa.css">
   <link rel="shortcut icon" href="/imagens/logo2.ico" type="image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,29 +15,46 @@
 </head>
 <body>
 
-  <header class="header">
-    <a href="/site.html">
-    <img src="/imagens/DoorWay.png" alt="Logo-Projeto" class="logo">
-  </a>
-    <nav class="navbar">
-      <a href="/src/html/home.html">Mapa</a>
-      <a href="/src/html/projeto.html">Nosso projeto</a>
-      <a href="/src/html/Contatos.html">Contatos</a>
-    </nav>
-  </header>
+  <header>
+    <a href="/site.html" class="logo2"> <img src="/imagens/DoorWay4.png" class="logo"> </a>
+  
+    <div class="menu-section">
+      <div class="menu-toggle">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+      </div>
+    <nav>
+       <ul>
+         <li >
+            <a href="/src/html/home.html" class="espaco">Mapa</a>
+       </li>
+          <li >
+            <a href="/src/html/projeto.html" class="espaco">Nosso projeto</a>
+         </li>
+          <li >
+            <a href="/src/html/Contatos.html" class="espaco">Contatos</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  
+</header>
 
-  <h1>BEM VINDO AO NOSSO MAPA INTERATIVO!</h1>
-  <h3>Basta abrir as instruções para obeter mais informações:</h3>
+    <h1 >BEM VINDO AO NOSSO MAPA INTERATIVO!</h1>
+    <h3 >Basta abrir as instruções para obeter mais informações:</h3>
 
-  <div class="map-class">
-  <img id="imagem" src="/imagens/mapa.png" alt="imagem da planta" usemap="#image-map" class="mapa-image">
-
-  <div class="map-selector"> 
+  <div class="instruction-botao">
+    <div onclick="abrirInstrucao()" class="Instrucoes-botao"> Instruções sobre o mapa:</div>
   </div>
-</div>
 
-    <map name="image-map" id="image-map">
-      <area shape="rect" coords="208,391,367,421" onclick="abrirModal()" class="botao" alt="Recepção" title="Secretaria/Cejur" target="alvo">
+  <p>
+  <img decoding="async" loading="lazy" src="/imagens/mapa.png" alt="imagem da planta" usemap="#image-map"  max-width="100%" class="mapa-teste">
+ </p>
+
+
+    <map name="image-map">
+      <area shape="rect" coords="208,391,367,421" href="https://www.google.com">
       <area shape="rect" coords="276,183,320,273" onclick="abrirModal2()" class="botao" alt="Reitoria" title="Reitoria" target="alvo">
       <area shape="rect" coords="568,362,662,421" onclick="abrirModal3()" class="botao" alt="Ambulatorio" title="Ambulatorio" target="alvo">
       <area shape="rect" coords="997,185,1243,295" onclick="abrirModal4()" class="botao" alt="Refeitorio" title="Refeitorio" target="alvo">
@@ -48,8 +66,6 @@
       <area shape="rect" coords="476,805,568,880" onclick="abrirModal8()" class="botao" alt="Escadas P/ 2 Andar" title="Escadas P/ 2 Andar" target="alvo">
       <area shape="rect" coords="1185,424,1231,457" onclick="abrirModal9()" class="botao" alt="Escada P/ 2 Andar" title="Escada P/ 2 Andar gourmert" target="alvo">
     </map>
-
-    <div onclick="abrirInstrucao()" class="Instrucoes-botao"> Instruções sobre o mapa:</div>
 
     <div class="janela-Instrucao" id="janela-Instrucao">
       <div class="instruction">
@@ -153,5 +169,12 @@
   
   </footer>
   <script src="/src/JS/script.js"></script>
+  <script src="/src/JS/responsive.js" ></script>
+  <script src="/src/JS/rwdImageMaps.js"> </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="/src/JS/rwdImageMaps.min.js"></script>
+  <script>
+    rwdImageMaps(document.querySelectorAll('img[usemap]'));
+  </script>
 </body>
 </html>

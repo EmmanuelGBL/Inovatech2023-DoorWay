@@ -25,7 +25,7 @@ document.getElementById("mensagem8").innerHTML = `<i> ${texto8}`;
 let texto9 = "Essas escadas dao acesso à 8 andares, sendo o 6º e 7º andar, destinados para pessoas do EaD e no último andar, encontra-se o auditório da fametro, e os demais andares são compostos por salas e uma biblioteca.";
 document.getElementById("mensagem9").innerHTML = `<i> ${texto9}`;
 
-let textoInstrucao = "Para interagir com o mapa basta passar o ponteiro do mouse por cima da area, se ela for selecionada, clique com o botão esquerdo do mouse. <br> Para sair do Card informativo aperte o “X” ou clique em qualquer lugar fora do Card."
+let textoInstrucao = "Para interagir com o mapa basta passar o ponteiro do mouse por cima da area, se ela for selecionada, clique com o botão esquerdo do mouse. <br> <br>Para sair do Card informativo aperte o “X” ou clique em qualquer lugar fora do Card."
 document.getElementById("mensagem-Instrucao").innerHTML = `<i> ${textoInstrucao}`
 
 
@@ -142,7 +142,7 @@ $('#image-map area').hover(
 		var coords = $(this).attr('coords').split(',');
 		var width = $('.map-class').width();
 		var height = $('.map-class').height();
-		$('.map-class .map-selector').addClass('hover').css({
+		$('.map-class .map-selector').addClass('hover').css({ 
 			'left': coords[0]+'px',
 			'top': coords[1] + 'px',
 			'right': width - coords[2]+'px',

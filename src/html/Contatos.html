@@ -7,29 +7,46 @@
     <title>Contatos</title>
     <link rel="shortcut icon" href="/imagens/logo2.ico" type="image">
     <link rel="stylesheet" href="/src/css/Contatos.css">
+    <link rel="stylesheet" href="/src/css/responsivo_contatos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap" rel="stylesheet">
-     
+
+
     <body>
         
-<header class="header">
-    <a href="/site.html">
-        <img src="/imagens/DoorWay.png" alt="Logo-Projeto" class="logo">
-      </a>
-     <nav class="navbar">
-        <a href="/src/html/home.html">Mapa</a>
-        <a href="/src/html/projeto.html">Nosso Projeto</a>
-        <a href="/src/html/Contatos.html">Contatos</a>
-    </nav>
+    <header>
+        <a href="/site.html" class="logo2"> <img src="/imagens/DoorWay4.png" class="logo"> </a>
+        <div class="menu-section">
+          <div class="menu-toggle">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+          </div>
+        <nav>
+           <ul>
+             <li >
+                 <a href="/src/html/home.html" class="espaco">Mapa</a>
+            </li>
+               <li >
+                 <a href="/src/html/projeto.html" class="espaco">Nosso projeto</a>
+             </li>
+              <li >
+                <a href="/src/html/Contatos.html" class="espaco">Contatos</a>
+              </li>
+            </ul>
+           </nav>
+         </div>
+          
 </header>
 
 
 <section id="contact">
     <div class="container">
+    <div class="coluna">
         <h2 class="h2">Contato</h2>
         <div class="contact-methods">
-            <div>
+            <div class="formulario">
                 <h3 class="h3">Fale Conocosco</h3>
                 <form>
                     <input type="text" placeholder="Seu Nome" required />
@@ -40,8 +57,9 @@
                 </form>
             </div>
             <div>
-                <h3 class="h3">Nos acompanhe</h3>
+                
                 <ul class="social-links">
+                    <h3 class="h3">Nos acompanhe</h3>
                     <li>
                         
                         <a href="https://www.instagram.com/doorway_fam/" title="Siga-nos no Instagram">
@@ -58,13 +76,13 @@
                     </li>
                     <li>
                         <a href="#" title="Visite Nosso casal no youtube">
-                            <img src="/imagens/youtube.png" alt="logo do Youtube">
+                            <img src="/imagens/youtube.png" alt="logo do Youtube" class="youtube">
                         </a>
                     </li>
                 </ul>
             </div>
             <div>
-                <h3 class="h3">Venha até nós</h3>
+                <h3 class="title-information">Venha até nós</h3>
                 <p class="informacao">
                     Sala: 32 - Unidade 1 & 2 Fametro,
                 </p>
@@ -74,11 +92,13 @@
             </div>
         </div>
     </div>
+</div>
 </section>
 <footer>
         <p>
             &copy DoorWay - Todos os  seus direitos reservados - 2023
         </p>
 </footer>
+<script src="/src/JS/responsive.js"></script>
 </body>
 </html>

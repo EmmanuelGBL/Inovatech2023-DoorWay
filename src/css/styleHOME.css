@@ -6,59 +6,84 @@
   }
   
   body {
-    min-height: 100vh;
-    background-color: #0e1035;
+    background-color: #131546;
+  }
+
+  html {
+    font-size: 62.5%;
   }
   
-  .header {
-    position: absolute;
+  .mapa-teste {
+    max-width: 100%;
+    height: auto;
+    border-style: none;
+    display: block;
+
+  }
+  header {
+    max-width: 1920px;
     width: 100%;
     height: 100px;
-    padding: 15px 100px;
     background: linear-gradient(60deg, rgb(8, 9, 38, 1), rgb(8, 9, 38, 1));
     display: flex;
-    justify-content: space-between;
     align-items: center;
-  }
+    justify-content: space-between;  
+    padding: 5rem;
+   }
+    
+
+    header nav ul {
+      display: flex;
+      
+    }
+    
+    header nav ul li {
+      list-style: none;
+      
+    }
+    
+    header nav ul li a {
+      text-decoration: none;
+      color: white;
+      text-transform: uppercase;
+      font-size: 2.0rem; 
+      padding: 1rem;
+      transition: all 250ms linear 0s;
+
+      
+    }  
   
-  .navbar a {
-    color: #fff;
-    font-size: 18px;
-    text-decoration: none;
-    margin-left: 35px;
-    transition: .3s;
-    font-weight: lighter;
-    font-size: 20px;
-  }  
-  
-  .navbar a:hover {
+  header nav ul li a:hover {
     color: rgb(117, 135, 240);
   }
   
-  .logo {
-    width: 300px;
-    cursor: pointer;
+  a.logo2, .logo {
+    max-width: 230px;
+    width: 100%;
   }
   
+
+
   h1 {
     color: rgb(246, 247, 249);
     justify-content: center;
     display: flex; 
-    padding-top: 110px;
-    align-items: center;
-    font-size: 40px;
+    font-size: 4.0rem;
     font-family: 'Poppins', sans-serif;
     font-weight: lighter;
+    margin: 20px;
+
   }
   
   h3 {
     color: rgb(80, 162, 255);
     justify-content: center;
     display: flex;
-    padding-top: 10px;
+    padding-top: 1rem;
     align-items: center;
-    font-size: 24px; 
+    font-size: 2.4rem; 
     font-weight: lighter;
+    margin: 20px;
   }
   
   p {
@@ -66,24 +91,21 @@
     justify-content: center;
     padding: 20px;
     display: flex;
-    font-size: 20px;
+    font-size: 2.0rem;
     font-family: 'Poppins', sans-serif;
   }
-  
-  
-  
-  
+
   footer {
     background-color: rgb(37, 6, 95);
     color: white;
-    margin-top: auto;
     padding: 16px;
     bottom: 0;
-    position:relative;
+    position: static;
     width: 100%;
-    justify-content: center;
+    left: 0;
+    font-size: 1.0rem;
+    
   }
-  
   
   .botao{
     cursor: pointer;
@@ -95,21 +117,26 @@
   }
   
   .Instrucoes-botao{
-    padding: 5px 20px;
+      padding: 5px 20px;
       display: inline;
       background-color: rgba(76, 93, 190, 0.514);
       border-radius: 20px;
       color: white;
-      font-size: 30px;
       cursor: pointer;
-      position: absolute;
-      top: 25%;
-      left: 87%;
-      transform: translate(-50%, -50%);
-      z-index: 1;
-      font-size: 22.5px;
-      text-align: center;
-      font-family: 'Poppins', sans-serif;
+      max-width: 280px;
+      font-size: 2.55rem;
+      width: 30%;
+  }
+
+  .instruction-botao {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    max-width: 1920px;
+    max-height: 1920px;
+    height: 100%;
+    width: 95%;
+  
   }
   
   .Instrucoes-botao:hover{
@@ -122,23 +149,39 @@
   }
   
   .instruction{
-      width: 20%;
-      width: 450px;
-      min-height: 200px;
-      margin-left: 1150px;
-      margin-right: -250px;
-      margin-top: 160px;
-      background-color: rgba(243, 243, 243, 0.849);
-      backdrop-filter: blur(10px);
-      padding: 0px;
-      border-radius: 20px;   
+    display: block;
+    width: 450px;
+    max-width: 450px;
+    margin-top: 160px;
+    background-color: rgba(243, 243, 243, 0.849);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;   
   }
   
+  #mensagem-Instrucao {
+    color: black;
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    
+  }
+
+  .titulo-Instrucao {
+    display: flex;
+    color: rgb(12, 4, 83);
+    text-align: center;
+    font-size: 2.9rem;
+    font-family: 'Poppins', sans-serif;
+    
+  }
   .janela-modal, .janela-modal2, .janela-modal3, .janela-modal4, .janela-modal5,
   .janela-modal6, .janela-modal7, .janela-modal8, .janela-modal9, .janela-modal10, 
   .janela-Instrucao{
-    width: 100vw;
-    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+    height: 100%;
+    width: 100%;
+
     position: fixed;
     top: 0;
     left: 0;
@@ -151,16 +194,39 @@
   }
   
   .modal, .modal2, .modal3, .modal4, .modal5, 
-  .modal6, .modal7, .modal8, .modal9, .modal10 {
-    width: 20%;
-    width: 450px;
-    min-height: 200px;
+  .modal6, .modal7, .modal8, .modal9, .modal10 { 
+    width: 100%;
+    max-width: 450px;
     background-color: rgba(201, 201, 201, 0.938);
     backdrop-filter: blur(10px);
-    padding: 0px;
     border-radius: 20px;
   }
+
+  .janela-modal.abrir, .janela-modal2.abrir, .janela-modal3.abrir, .janela-modal4.abrir, .janela-modal5.abrir,
+  .janela-modal6.abrir, .janela-modal7.abrir, .janela-modal8.abrir, .janela-modal9.abrir, .janela-modal10.abrir {
+    display: flex;
+  }
   
+  .imagens, .imagens2, .imagens3, .slide, .passar-foto {
+    width: 100%;
+    max-width: 450px;
+    border-top-left-radius: 20px;
+  }
+  
+  .nome-local{
+    color: rgb(12, 4, 83);
+    text-align: center;
+    font-size: 3.0rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  #mensagem, #mensagem2, #mensagem3, #mensagem4, #mensagem5, 
+  #mensagem6, #mensagem7, #mensagem8, #mensagem9, #mensagem10 {
+    color: black;
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+  }
+
   .fechar{
     position: absolute;
     top: -10px;
@@ -171,58 +237,17 @@
     border: 0;
     background-color: red;
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: 2.0rem;
     cursor: pointer;
   }
   
-  .janela-modal.abrir, .janela-modal2.abrir, .janela-modal3.abrir, .janela-modal4.abrir, .janela-modal5.abrir,
-  .janela-modal6.abrir, .janela-modal7.abrir, .janela-modal8.abrir, .janela-modal9.abrir, .janela-modal10.abrir {
-    display: flex;
-  }
-  
-  .imagens, .imagens2, .imagens3, .slide, .passar-foto {
-    width: 60%;
-    min-width: 350px;
-    min-height: 100px;
-    width: 450px;
-    border-top-left-radius: 20px;
-  }
-  
-  .nome-local{
-    color: rgb(12, 4, 83);
-    margin-top: -100px;
-    text-align: center;
-    font-size: 30px;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  .titulo-Instrucao {
-    color: rgb(12, 4, 83);
-    margin-top: -100px;
-    text-align: center;
-    font-size: 25px;
-    font-family: 'Poppins', sans-serif;
-    
-  }
-  
-  #mensagem, #mensagem2, #mensagem3, #mensagem4, #mensagem5, 
-  #mensagem6, #mensagem7, #mensagem8, #mensagem9, #mensagem10, 
-  #mensagem-Instrucao {
-    color: black;
-    font-size: 20px;
-    height: auto;
-    text-align: justify;
-    width: 380px;
-    font-family: 'Poppins', sans-serif;
-    margin-left: 22.5px;
-  }
-  
   .map-class {
-      position: relative;
+    position: relative;
     display:inline-block;
   }
   .map-class img {
     text-align: center;
+    max-width: 100%;
   }
   .map-class .map-selector {
     left:0;
@@ -252,5 +277,4 @@
       transition-property: top, left, right, bottom, background;
       pointer-events: none;
   }
-  
   
