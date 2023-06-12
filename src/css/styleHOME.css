@@ -103,7 +103,7 @@
     position: static;
     width: 100%;
     left: 0;
-    font-size: 1.0rem;
+    font-size: 1.4rem;
     
   }
   
@@ -135,8 +135,8 @@
     max-width: 1920px;
     max-height: 1920px;
     height: 100%;
-    width: 95%;
-  
+    width: 85%;
+    padding: 1.0rem;
   }
   
   .Instrucoes-botao:hover{
@@ -243,7 +243,6 @@
   
   .map-class {
     position: relative;
-    display:inline-block;
   }
   .map-class img {
     text-align: center;
@@ -258,6 +257,8 @@
     transition-duration: .0.5s;
       transition-timing-function: ease-out;
       transition-property: top, left, right, bottom, color;
+      display:flex;
+      justify-content: center;
   }
   .map-class .map-selector.hover {
     color:#a2b5be80;
@@ -277,4 +278,13 @@
       transition-property: top, left, right, bottom, background;
       pointer-events: none;
   }
+
+  #slideshow .slide {
+    display: none;
+  }
+  
+  #slideshow .slide:first-child {
+    display: block;
+  }
+  
   

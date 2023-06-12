@@ -112,17 +112,13 @@
 .instruction-botao {
     display: flex;
     justify-content: center;
-    margin-left: -40px;
     font-size: 100%;
-    width: 120%;
-}
-
-}
+    max-width: 529px;
+    width: 100%;
+    margin: 0 0;
+}}
 
 @media (max-width: 447px) {
-    .menu-section{
-       margin-right: -15%;
-    }
    .logo {
         width: 100%;
     }
@@ -154,11 +150,11 @@
 
 }
 
-/* @media (max-width: 419px) {
+ @media (max-width: 419px) {
     .instruction-botao {
         display: flex;
         justify-content: center;
-        font-size: 80%;
+        font-size: 70%;
+        width: 100%;
     }
-
-} */
+}

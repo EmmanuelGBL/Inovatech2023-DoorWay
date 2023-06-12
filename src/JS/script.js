@@ -25,7 +25,7 @@ document.getElementById("mensagem8").innerHTML = `<i> ${texto8}`;
 let texto9 = "Essas escadas dao acesso à 8 andares, sendo o 6º e 7º andar, destinados para pessoas do EaD e no último andar, encontra-se o auditório da fametro, e os demais andares são compostos por salas e uma biblioteca.";
 document.getElementById("mensagem9").innerHTML = `<i> ${texto9}`;
 
-let textoInstrucao = "Para interagir com o mapa basta passar o ponteiro do mouse por cima da area, se ela for selecionada, clique com o botão esquerdo do mouse. <br> <br>Para sair do Card informativo aperte o “X” ou clique em qualquer lugar fora do Card."
+let textoInstrucao = "Para interagir com o mapa basta passar o ponteiro do mouse por cima da area, se ela for selecionada, clique com o botão esquerdo do mouse. <br>Para sair do Card informativo aperte o “X” ou clique em qualquer lugar fora do Card. <br> <br> Observação: As únicas áreas interativas  do mapa são: Ambulatório, Escadas, Ginásio, Recepção, Reitoria, Refeitorio, MiniAuditório, "
 document.getElementById("mensagem-Instrucao").innerHTML = `<i> ${textoInstrucao}`
 
 
@@ -167,10 +167,11 @@ function abrirInstrucao() {
     )
 }
 
+
 document.addEventListener("DOMContentLoaded", function(event) {
     let slide = document.querySelectorAll(".slide");
     let currentSlide = 0;
-    const slideInterval = setInterval(nextSlide, 3500);
+    const slideInterval = setInterval(nextSlide, 2500);
   
     function nextSlide() {
       slide[currentSlide].style.display = "none";
@@ -178,17 +179,3 @@ document.addEventListener("DOMContentLoaded", function(event) {
       slide[currentSlide].style.display = "block";
     }
   });
-  
-  document.addEventListener("DOMContentLoaded", function(event) {
-    let datashow = document.querySelectorAll(".passar-foto");
-    let currentSlide = 0;
-    const slideInterval = setInterval(nextSlide, 5000);
-  
-    function nextSlide() {
-      datashow[currentSlide].style.display = "none";
-      currentSlide = (currentSlide + 1) % datashow.length;
-      datashow[currentSlide].style.display = "block";
-    }
-  });
-  
-  

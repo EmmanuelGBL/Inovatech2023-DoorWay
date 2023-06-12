@@ -48,12 +48,14 @@
     <div onclick="abrirInstrucao()" class="Instrucoes-botao"> Instruções sobre o mapa:</div>
   </div>
 
-  <p>
+  <div class="map-class">
   <img decoding="async" loading="lazy" src="/imagens/mapa.png" alt="imagem da planta" usemap="#image-map"  max-width="100%" class="mapa-teste">
- </p>
+    <div class="map-selector">
+    </div>
+</div>
 
 
-    <map name="image-map">
+    <map name="image-map" id="image-map">
       <area shape="rect" coords="208,391,367,421" onclick="abrirModal()" class="botao" alt="Recepção" title="Recepção" target="alvo">
       <area shape="rect" coords="276,183,320,273" onclick="abrirModal2()" class="botao" alt="Reitoria" title="Reitoria" target="alvo">
       <area shape="rect" coords="568,362,662,421" onclick="abrirModal3()" class="botao" alt="Ambulatorio" title="Ambulatorio" target="alvo">
@@ -107,12 +109,14 @@
     <div class="janela-modal4" id="janela-modal4">
       <div class="modal4">
         <button class="fechar" id="fechar">X</button>
+        <div id="slideshow">
         <img src="/imagens/Mapa/Lanchonete-Banco.jpg" alt="Refeitório" class="slide">
         <img src="/imagens/Mapa/Refeitorio-banco.jpg" alt="Refeitório" class="slide">
         <img src="/imagens/Mapa/refeitorio2.jpg" alt="Refeitório" class="slide">
         <img src="/imagens/Mapa/refeitorio.jpg" alt="Refeitório" class="slide">
         <img src="/imagens/Mapa/refeitorio4.png" alt="Refeitório" class="slide">
         <img src="/imagens/Mapa/Lanchonete-DJ.jpg" alt="Refeitório" class="slide">
+      </div>
         <h1 class="nome-local">Refeitório</h1>
         <p id="mensagem4" class="mensagem4"> </p>
       </div>
@@ -121,8 +125,10 @@
     <div class="janela-modal5" id="janela-modal5">
       <div class="modal5">
         <button class="fechar" id="fechar">X</button>
-        <img src="/imagens/Mapa/Grafica.jpg" alt="Graficas" class="passar-foto">
-        <img src="/imagens/Mapa/Outra Grafica.jpg" alt="Graficas" class="passar-foto">
+        <div id="slideshow">
+        <img src="/imagens/Mapa/Grafica.jpg" alt="Graficas" class="slide">
+        <img src="/imagens/Mapa/Outra Grafica.jpg" alt="Graficas" class="slide">
+      </div>
         <h1 class="nome-local">Gráficas</h1>
         <p id="mensagem5"> </p>
       </div>
