@@ -179,3 +179,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
       slide[currentSlide].style.display = "block";
     }
   });
+
+  document.addEventListener("DOMContentLoaded", function(event) {
+    let slide = document.querySelectorAll(".slide-grafica");
+    let currentSlide = 0;
+    const slideInterval = setInterval(nextSlide, 2500);
+  
+    function nextSlide() {
+      slide[currentSlide].style.display = "none";
+      currentSlide = (currentSlide + 1) % slide.length;
+      slide[currentSlide].style.display = "block";
+    }
+  });

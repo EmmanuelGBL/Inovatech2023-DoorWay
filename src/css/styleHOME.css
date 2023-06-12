@@ -207,7 +207,7 @@
     display: flex;
   }
   
-  .imagens, .imagens2, .imagens3, .slide, .passar-foto {
+  .imagens, .imagens2, .imagens3, .slide, .slide-grafica {
     width: 100%;
     max-width: 450px;
     border-top-left-radius: 20px;
@@ -279,11 +279,11 @@
       pointer-events: none;
   }
 
-  #slideshow .slide {
+  #slideshow .slide,  #slideshow .slide-grafica{
     display: none;
   }
   
-  #slideshow .slide:first-child {
+  #slideshow .slide:first-child,  #slideshow .slide-grafica:first-child{
     display: block;
   }
   
